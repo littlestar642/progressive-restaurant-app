@@ -38,6 +38,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 #maincontent {
   background-color: #f3f3f3;
   min-height: 100%;
+  width:100%;
 }
 #footer {
   background-color: #444;
@@ -114,6 +115,7 @@ nav h1 a {
   align-items: center;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap
 }
 .filter-options h2 {
   color: white;
@@ -315,7 +317,7 @@ nav h1 a {
   }
   nav h1 a {
     color: #fff;
-    font-size: 18pt;
+    font-size: 14pt;
     font-weight: 200;
     letter-spacing: 10px;
     text-transform: uppercase;
@@ -329,39 +331,20 @@ nav h1 a {
     width: calc(50% - 80px);
     display: none;
 }
-.inside #map-container {
-  background: blue none repeat scroll 0 0;
-  height: 87%;
-  position: fixed;
-  right: 0;
-  top: 80px;
-  width: 30%;
-}
-#restaurant-container{
-  width:70%;
-  padding: 80px 20px 30px;
-  
-}
-#footerInside {
-  width: 70%;
-  background-color: #444;
-  color: #aaa;
-  font-size: 8pt;
-  letter-spacing: 1px;
-  padding: 25px;
-  text-align: center;
-  text-transform: uppercase;
-
-}
-#reviews-list li {
-  background-color: #fff;
-  border: 2px solid #f3f3f3;
-  display: block;
-  list-style-type: none;
-  margin: 0 0 30px;
-  overflow: hidden;
-  padding: 0 20px 20px;
-  position: relative;
+.filter-options {
   width: 100%;
+  height: 150px;
+  background-color: #3397DB;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column
+}
+#neighborhoods-select{
+  flex:1;
+}
+#cuisines-select{
+  flex:1
 }
 }
